@@ -4,8 +4,8 @@ import streamlit as st
 from dotenv import load_dotenv
 load_dotenv()
 # Set the base URL and API key for the OpenAI client
-os.environ["openai.api_base"] = os.getenv("lOCAL_URL" )
-os.environ["openai.api_key"] = os.getenv("LOCAL_API_KEY")
+openai.api_base = os.getenv("lOCAL_URL" )
+openai.api_key = os.getenv("LOCAL_API_KEY")
 
 st.set_page_config(page_title="Chat with Bot", page_icon="🤖")
 
